@@ -673,11 +673,13 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-.br::before {
-  content: "\A";
-  white-space: pre;
-  color: #333333;
-  margin-top: 1rem;
+@media (max-width: 576px) {
+  .br::before {
+    content: "\A";
+    white-space: pre;
+    color: #333333;
+    margin-top: 1rem;
+  }
 }
 
 .blog {
